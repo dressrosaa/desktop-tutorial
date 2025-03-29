@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>株式会社ボイラエンジニアリング | 蒸気設備専門 | 省エネ技術</title>
+  <meta name="description" content="株式会社ボイラエンジニアリングは蒸気設備専門の企業です。蒸気配管凍結防止システム、耐凍式スチームトラップ、コンクリート蒸気養生制御装置など、省エネと効率化を実現する特許技術を多数保有しています。">
+  <meta name="keywords" content="ボイラエンジニアリング,蒸気設備,蒸気配管,凍結防止,スチームトラップ,コンクリート養生,省エネ,特許技術">
+  <meta name="author" content="株式会社ボイラエンジニアリング">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.boiler-e.com/">
+
+  <!-- Open Graph Protocol -->
+  <meta property="og:url" content="https://www.boiler-e.com/">
+  <meta property="og:title" content="株式会社ボイラエンジニアリング | 蒸気設備専門 | 省エネ技術">
+  <meta property="og:image" content="https://www.boiler-e.com/assets/images/og-image.jpg">
+  <meta property="og:description" content="株式会社ボイラエンジニアリングは蒸気設備専門の企業です。蒸気配管凍結防止システム、耐凍式スチームトラップ、コンクリート蒸気養生制御装置など、省エネと効率化を実現する特許技術を多数保有しています。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="株式会社ボイラエンジニアリング">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- 特許モーダル用CSS -->
+  <link rel="stylesheet" href="patent-modal.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230066CC'/%3E%3Cpath d='M30,30 C40,20 60,20 70,30 C80,40 80,60 70,70 C60,80 40,80 30,70 C20,60 20,40 30,30 Z' fill='white'/%3E%3C/svg%3E"
+    type="image/svg+xml">
+
+  <style>
+    /* ===== CSS スタイルはここに記述します ===== */
+
+    /* ===== 基本設定 ===== */
+    :root {
+      --primary-color: #0066CC;
+      --secondary-color: #607D8B;
+      --accent-color: #0066cc;
+      --base-color: #F5F5F5;
+      --text-color: #333333;
+      --light-text: #FFFFFF;
+      --dark-text: #222222;
+      --border-color: #DDDDDD;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+
+      --header-height: 80px;
+      --section-padding: 80px 0;
+      --container-padding: 0 20px;
+
+      --transition-speed: 0.3s;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text-color);
+      background-color: var(--base-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--primary-color);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color var(--transition-speed);
+    }
+
+    a:hover {
+      color: var(--accent-color);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--container-padding);
+    }
+
+    .section {
+      padding: var(--section-padding);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--transition-speed);
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      color: var(--light-text);
+      border: 2px solid var(--primary-color);
+    }
+
+    .btn-primary:hover {
+      background-color: transparent;
+      color: var(--primary-color);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--primary-color);
+      color: var(--light-text);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .mb-2 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 2rem;
+    }
+
+    .mb-5 {
+      margin-bottom: 3rem;
+    }
+
+    /* ===== ヘッダー ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      background-color: #000;
+      color: #fff;
+      z-index: 1000;
+      box-shadow: 0 2px 10px var(--shadow-color);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 1rem;
+    }
+
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .nav-menu {
+      display: flex;
+    }
+
+    .nav-item {
+      margin-left: 2rem;
+    }
+
+    .nav-link {
+      color: #fff;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary-color);
+      transition: width var(--transition-speed);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: all var(--transition-speed);
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: calc(100vh - var(--header-height));
+        background-color: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        transition: right var(--transition-speed);
+      }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-item {
+        margin: 1.5rem 0;
+      }
+    }
+
+    /* ===== ヒーローセクション ===== */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--primary-color);
+      color: var(--light-text);
+      padding-top: var(--header-height);
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    /* ===== 特徴セクション ===== */
+    .features {
+      background-color: var(--light-text);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-item {
+      background-color: var(--base-color);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 10px var(--shadow-color);
+      transition: transform var(--transition-speed);
+    }
+
+    .feature-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .feature-title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-description {
+      color: var(--secondary-color);
+    }
+
+    /* ===== 特許セクション ===== */
+    .patents {
+      background-color: var(--base-color);
+    }
+
+    .patents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .patent-item {
+      background-color: var(--light-text);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px var(--shadow-color);
+    }
+
+    .patent-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .patent-number {
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .patent-description {
+      color: var(--text-color);
+      margin-bottom: 1rem;
+    }
+
+    /* ===== 会社概要セクション ===== */
+    .company {
+      background-color: var(--light-text);
+    }
+
+    .company-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .company-image {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .company-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .company-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .company-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .company-table th,
+    .company-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .company-table th {
+      text-align: left;
+      width: 30%;
+      color: var(--secondary-color);
+    }
+
+    @media (max-width: 768px) {
+      .company-info {
+        grid-template-columns: 1fr;
+      }
+
+      .company-image {
+        order: 2;
+      }
+
+      .company-details {
+        order: 1;
+      }
+    }
+
+    /* ===== 採用情報セクション ===== */
+    .recruitment {
+      background-color: var(--base-color);
+    }
+
+    .recruitment-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .recruitment-image {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px var(--shadow-color);
+    }
+
+    .recruitment-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .recruitment-details h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .recruitment-list {
+      margin-bottom: 2rem;
+    }
+
+    .recruitment-list li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .recruitment-list li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+      .recruitment-content {
+        grid-template-columns: 1fr;
+      }
+
+      .recruitment-image {
+        order: 2;
+      }
+
+      .recruitment-details {
+        order: 1;
+      }
+    }
+
+    /* ===== お問い合わせセクション ===== */
+    .contact {
+      background-color: var(--light-text);
+    }
+
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-details {
+      margin-bottom: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background-color: var(--primary-color);
+      color: var(--light-text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1rem;
+    }
+
+    .contact-text {
+      flex: 1;
+    }
+
+    .contact-text h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-text p {
+      color: var(--secondary-color);
+      margin-bottom: 0;
+    }
+
+    .contact-form {
+      background-color: var(--base-color);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 15px var(--shadow-color);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: inherit;
+      transition: border-color var(--transition-speed);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-submit {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .contact-content {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info {
+        order: 1;
+      }
+
+      .contact-form {
+        order: 2;
+      }
+    }
+
+    /* ===== フッター ===== */
+    footer {
+      background-color: var(--dark-text);
+      color: var(--light-text);
+      padding: 3rem 0;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+
+    .footer-logo-text {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .footer-description {
+      color: #aaa;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--light-text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color var(--transition-speed);
+    }
+
+    .footer-social a:hover {
+      background-color: var(--primary-color);
+    }
+
+    .footer-title {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--primary-color);
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: #aaa;
+      transition: color var(--transition-speed);
+    }
+
+    .footer-links a:hover {
+      color: var(--light-text);
+    }
+
+    .footer-contact li {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    .footer-contact-icon {
+      margin-right: 1rem;
+      color: var(--primary-color);
+    }
+
+    .footer-bottom {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    /* ===== レスポンシブ対応 ===== */
+    @media (max-width: 992px) {
+      :root {
+        --section-padding: 60px 0;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --section-padding: 50px 0;
+      }
+
+      .section-title {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      :root {
+        --section-padding: 40px 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+    }
+
+    /* ===== アニメーション ===== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1s ease forwards;
+    }
+
+    /* ===== スマホ対応の改善 ===== */
+    @media (max-width: 576px) {
+      /* ハンバーガーメニューの改善 */
+      .hamburger {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+        padding: 8px;
+      }
+
+      .hamburger span {
+        background-color: #fff;
+        height: 2px;
+        margin: 4px 0;
+      }
+
+      /* モバイルメニューの背景と文字色の改善 */
+      .nav-menu {
+        background-color: rgba(0, 0, 0, 0.95);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .nav-item {
+        width: 100%;
+        text-align: center;
+      }
+
+      .nav-link {
+        color: #fff;
+        font-size: 1.1rem;
+        padding: 12px 0;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* お問い合わせフォームの電話番号色調整 */
+      .contact-phone a {
+        color: #333; /* 濃い青から黒に変更 */
+        font-weight: 600;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 3px 8px;
+        border-radius: 4px;
+        display: inline-block;
+      }
+      
+      .contact-phone a:hover {
+        background-color: rgba(255, 255, 255, 1);
+        color: #0066CC;
+      }
+
+      /* お問い合わせフォームのヘッダー改善 */
+      .contact-form-header {
+        background-color: #333;
+        padding: 15px;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 2px solid #0066CC;
+        color: #fff;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-form-header h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      
+      /* お問い合わせフォーム全体の改善 */
+      .contact-form {
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .form-group {
+        margin-bottom: 1.2rem;
+      }
+      
+      .form-label {
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    /* 人材募集欄の画像サイズとバランス調整 */
+    .recruitment-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .recruitment-image {
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      aspect-ratio: 1 / 1;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .recruitment-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.5s ease;
+    }
+    
+    .recruitment-image:hover img {
+      transform: scale(1.05);
+    }
+    
+    .recruitment-details {
+      padding: 1rem;
+    }
+    
+    .recruitment-details h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary-color);
+    }
+    
+    .recruitment-list {
+      margin-left: 1rem;
+    }
+    
+    .recruitment-list li {
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 992px) {
+      .recruitment-image {
+        max-width: 400px;
+      }
+      
+      .recruitment-details h3 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .recruitment-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .recruitment-image {
+        max-width: 350px;
+        aspect-ratio: 4 / 3;
+        order: 1;
+      }
+      
+      .recruitment-details {
+        order: 2;
+        text-align: center;
+      }
+      
+      .recruitment-list {
+        text-align: left;
+        display: inline-block;
+      }
+      
+      .recruitment-details h3 {
+        font-size: 1.5rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .recruitment-image {
+        max-width: 280px;
+        aspect-ratio: 1 / 1;
+      }
+      
+      .recruitment-details h3 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="logo.png" alt="株式会社ボイラエンジニアリングのロゴ">
+        <div class="logo-text">株式会社ボイラエンジニアリング</div>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#about" class="nav-link">会社概要</a></li>
+          <li class="nav-item"><a href="#patents" class="nav-link">保有特許</a></li>
+          <li class="nav-item"><a href="#recruitment" class="nav-link">人材募集</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">蒸気設備の専門家として<br>省エネと効率化を実現</h1>
+      <p class="hero-subtitle">株式会社ボイラエンジニアリングは、蒸気設備に関する革新的な技術で、お客様の課題を解決します。</p>
+      <div class="hero-buttons">
+        <a href="#patents" class="btn btn-primary">保有特許を見る</a>
+        <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 会社概要セクション -->
+  <section id="about" class="section company">
+    <div class="container">
+      <h2 class="section-title">会社概要</h2>
+      <div class="company-info">
+        <div class="company-image">
+          <img src="cicago_R.jpg" alt="株式会社ボイラエンジニアリングの外観">
+        </div>
+        <div class="company-details">
+          <table class="company-table">
+            <tr>
+              <th>会社名</th>
+              <td>株式会社ボイラエンジニアリング</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>1995年4月</td>
+            </tr>
+            <tr>
+              <th>代表取締役</th>
+              <td>三浦 健太郎</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>〒060-0004<br>北海道札幌市中央区北4条西5丁目1番地</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>蒸気設備の設計・施工・保守<br>省エネルギーシステムの開発・販売<br>特許技術の実用化・ライセンス提供</td>
+            </tr>
+            <tr>
+              <th>取引先</th>
+              <td>大手建設会社、製造業、公共施設など</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特許セクション -->
+  <section id="patents" class="section patents">
+    <div class="container">
+      <h2 class="section-title">保有特許</h2>
+      <p class="text-center mb-4">当社は蒸気設備に関する革新的な技術を多数特許化しています。<br>これらの技術により、省エネルギー化と効率向上を実現します。</p>
+      <div class="patents-grid">
+        <!-- 特許項目1 -->
+        <div class="patent-item patent-clickable">
+          <h3 class="patent-title">蒸気配管系電磁弁減圧弁装置</h3>
+          <p class="patent-number">特許第7387188号</p>
+          <p class="patent-description">蒸気配管系における電磁弁と減圧弁を組み合わせた革新的な装置。省エネルギー化と安全性向上を実現します。</p>
+        </div>
+        <!-- 特許項目2 -->
+        <div class="patent-item patent-clickable">
+          <h3 class="patent-title">換気設備</h3>
+          <p class="patent-number">特許第7264530号</p>
+          <p class="patent-description">効率的な換気を実現する特許技術。エネルギー消費を抑えながら最適な環境を維持します。</p>
+        </div>
+        <!-- 特許項目3 -->
+        <div class="patent-item patent-clickable">
+          <h3 class="patent-title">Y型ストレーナ清掃装置</h3>
+          <p class="patent-number">特許第6086457号</p>
+          <p class="patent-description">Y型ストレーナの清掃を効率化する装置。メンテナンス性向上とダウンタイム削減に貢献します。</p>
+        </div>
+        <!-- 特許項目4 -->
+        <div class="patent-item patent-clickable">
+          <h3 class="patent-title">後養生制御機能付コンクリート二次製品養生制御装置</h3>
+          <p class="patent-number">特許第6033272号</p>
+          <p class="patent-description">コンクリート二次製品の養生プロセスを最適化する制御装置。品質向上とエネルギー効率化を両立します。</p>
+        </div>
+        <!-- 特許項目5 -->
+        <div class="patent-item patent-clickable">
+          <h3 class="patent-title">蒸気配管系凍結防止システム</h3>
+          <p class="patent-number">特許第6049104号</p>
+          <p class="patent-description">寒冷地での蒸気配管凍結を防止する革新的なシステム。安定稼働と省エネルギー化に貢献します。</p>
+        </div>
+        <!-- 特許項目6 -->
+        <div class="patent-item patent-clickable">
+          <h3 class="patent-title">ストックヤード骨材凍結防止装置</h3>
+          <p class="patent-number">特許第4257299号</p>
+          <p class="patent-description">ストックヤードの骨材凍結を防止する装置。寒冷地での作業効率向上と品質維持に貢献します。</p>
+        </div>
+        <!-- 特許項目7 -->
+        <div class="patent-item patent-clickable">
+          <h3 class="patent-title">コンクリート二次製品養生装置</h3>
+          <p class="patent-number">特許第3603796号</p>
+          <p class="patent-description">コンクリート二次製品の養生を効率的に行う装置。品質向上と生産性向上を実現します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 人材募集セクション -->
+  <section id="recruitment" class="section recruitment">
+    <div class="container">
+      <h2 class="section-title">人材募集</h2>
+      <div class="recruitment-content">
+        <div class="recruitment-image">
+          <img src="miura.png" alt="株式会社ボイラエンジニアリングの社員">
+        </div>
+        <div class="recruitment-details">
+          <h3>一緒に技術革新を目指しませんか？</h3>
+          <p>株式会社ボイラエンジニアリングでは、蒸気設備の技術革新に情熱を持って取り組む仲間を募集しています。経験者はもちろん、未経験でも熱意のある方を歓迎します。</p>
+          <ul class="recruitment-list">
+            <li>蒸気設備の設計・施工に関わりたい方</li>
+            <li>省エネルギー技術の開発に興味がある方</li>
+            <li>特許技術の実用化に挑戦したい方</li>
+            <li>顧客の課題解決に喜びを感じる方</li>
+            <li>チームワークを大切にできる方</li>
+          </ul>
+          <p>詳細は下記お問い合わせフォームよりお気軽にお問い合わせください。</p>
+          <a href="#contact" class="btn btn-primary">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせセクション -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">お問い合わせ</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>お気軽にお問い合わせください</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>所在地</h4>
+                <p>〒060-0004<br>北海道札幌市中央区北4条西5丁目1番地</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text contact-phone">
+                <h4>電話番号</h4>
+                <p><a href="tel:0112345678">011-234-5678</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>メールアドレス</h4>
+                <p>info@boiler-e.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <h4>営業時間</h4>
+                <p>平日 9:00〜18:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="contact-form-header">
+            <h3>お問い合わせフォーム</h3>
+          </div>
+          <form action="contact.html" method="post">
+            <div class="form-group">
+              <label for="name" class="form-label">お名前 <span style="color: red;">*</span></label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="company" class="form-label">会社名</label>
+              <input type="text" id="company" name="company" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">メールアドレス <span style="color: red;">*</span></label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">電話番号</label>
+              <input type="tel" id="phone" name="phone" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">件名 <span style="color: red;">*</span></label>
+              <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">お問い合わせ内容 <span style="color: red;">*</span></label>
+              <textarea id="message" name="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">送信する</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo">
+            <img src="logo.png" alt="株式会社ボイラエンジニアリングのロゴ">
+            <div class="footer-logo-text">株式会社ボイラエンジニアリング</div>
+          </div>
+          <p class="footer-description">蒸気設備の専門家として、省エネと効率化を実現します。</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-title">リンク</h3>
+          <ul class="footer-links">
+            <li><a href="#about">会社概要</a></li>
+            <li><a href="#patents">保有特許</a></li>
+            <li><a href="#recruitment">人材募集</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">お問い合わせ</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+              <span>〒060-0004<br>北海道札幌市中央区北4条西5丁目1番地</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt footer-contact-icon"></i>
+              <span>011-234-5678</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope footer-contact-icon"></i>
+              <span>info@boiler-e.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 株式会社ボイラエンジニアリング All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // ハンバーガーメニューの動作
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+
+      hamburger.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+      });
+
+      // ナビゲーションリンクのスムーススクロール
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          const headerHeight = document.querySelector('header').offsetHeight;
+          const targetPosition = targetElement.offsetTop - headerHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+
+          // モバイルメニューを閉じる
+          if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+          }
+        });
+      });
+
+      // スクロール時のヘッダー背景変更
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+          header.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+        } else {
+          header.style.backgroundColor = '#000';
+        }
+      });
+
+      // アニメーション要素の表示
+      const animateElements = document.querySelectorAll('.animate-fadeIn');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      animateElements.forEach(element => {
+        element.style.opacity = 0;
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(element);
+      });
+    });
+  </script>
+
+  <!-- 特許詳細表示用JavaScript -->
+  <script src="patent-details.js"></script>
+</body>
+
+</html>

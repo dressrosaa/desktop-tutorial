@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 株式会社ボイラエンジニアリング</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* 全体のスタイル */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f8f8;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* ヘッダー */
+    .header {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo-img {
+      width: 50px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0066CC;
+    }
+    
+    .nav-menu {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-item {
+      margin-left: 20px;
+    }
+    
+    .nav-link {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-link:hover {
+      color: #0066CC;
+    }
+    
+    /* メインコンテンツ */
+    .main {
+      padding-top: 80px;
+      min-height: calc(100vh - 200px);
+    }
+    
+    .section {
+      padding: 60px 0;
+    }
+    
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    
+    .section-subtitle {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #666;
+    }
+    
+    /* お問い合わせフォーム */
+    .contact-form {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #333;
+    }
+    
+    .form-required {
+      color: #e74c3c;
+      margin-left: 5px;
+    }
+    
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: #0066CC;
+      outline: none;
+    }
+    
+    .form-textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    .form-button {
+      background-color: #0066CC;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .form-button:hover {
+      background-color: #0055aa;
+    }
+    
+    /* フッター */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0 20px;
+    }
+    
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    
+    .footer-col {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 30px;
+    }
+    
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .footer-logo-img {
+      width: 50px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    
+    .footer-logo-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+    }
+    
+    .footer-text {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+    
+    .footer-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-link {
+      margin-bottom: 10px;
+    }
+    
+    .footer-link a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-link a:hover {
+      color: #fff;
+    }
+    
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    
+    .footer-contact-icon {
+      margin-right: 10px;
+      color: #0066CC;
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      text-align: center;
+    }
+    
+    .footer-copyright {
+      font-size: 14px;
+      color: #999;
+    }
+    
+    /* レスポンシブ対応 */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+      }
+      
+      .nav-menu {
+        margin-top: 15px;
+      }
+      
+      .nav-item {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      .section-title {
+        font-size: 28px;
+      }
+      
+      .contact-form {
+        padding: 30px 20px;
+      }
+    }
+    
+    /* 送信完了メッセージ */
+    .success-message {
+      text-align: center;
+      padding: 40px;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    
+    .success-icon {
+      font-size: 60px;
+      color: #2ecc71;
+      margin-bottom: 20px;
+    }
+    
+    .success-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    
+    .success-text {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background-color: #0066CC;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    
+    .back-button:hover {
+      background-color: #0055aa;
+    }
+  </style>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <svg class="logo-img" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30,50 C30,30 50,20 70,30 C90,40 90,60 70,70 C50,80 30,70 30,50 Z" fill="#0066CC"/>
+            <path d="M80,50 C80,30 100,20 120,30 C140,40 140,60 120,70 C100,80 80,70 80,50 Z" fill="#0066CC"/>
+            <text x="160" y="60" font-family="Rubik, sans-serif" font-size="20" font-weight="bold" fill="#0066CC">BE</text>
+          </svg>
+          <div class="logo-text">BOILER ENGINEERING</div>
+        </div>
+        
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html#home" class="nav-link">ホーム</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">会社概要</a></li>
+            <li class="nav-item"><a href="index.html#services" class="nav-link">事業内容</a></li>
+            <li class="nav-item"><a href="index.html#patents" class="nav-link">保有特許</a></li>
+            <li class="nav-item"><a href="index.html#projects" class="nav-link">施工事例</a></li>
+            <li class="nav-item"><a href="index.html#careers" class="nav-link">採用情報</a></li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">お問い合わせ</h1>
+        <p class="section-subtitle">弊社へのお問い合わせは、以下のフォームからお願いいたします。</p>
+        
+        <div class="contact-form">
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <div class="form-group">
+              <label for="name" class="form-label">お名前<span class="form-required">*</span></label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="company" class="form-label">会社名</label>
+              <input type="text" id="company" name="$company" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">メールアドレス<span class="form-required">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">電話番号</label>
+              <input type="tel" id="phone" name="$phone" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">件名<span class="form-required">*</span></label>
+              <input type="text" id="subject" name="$subject" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">お問い合わせ内容<span class="form-required">*</span></label>
+              <textarea id="message" name="message" class="form-textarea" required></textarea>
+            </div>
+            
+            <!-- StaticForms用の必須フィールド -->
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="sf_g4a1c09mdhecjil79b986836">
+            <input type="hidden" name="subject" value="ボイラエンジニアリングへのお問い合わせ">
+            <input type="hidden" name="replyTo" value="soma.azuresky@gmail.com">
+            <input type="hidden" name="redirectTo" value="https://wnkncvfx.manus.space/contact-success.html">
+            
+            <div class="form-group">
+              <!-- reCAPTCHA -->
+              <div class="g-recaptcha" data-sitekey="6LfJsP8qAAAAAFgQpCwjZHyUkoERVuQM0JB3BPsA"></div>
+              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" class="form-button">送信する</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <svg class="footer-logo-img" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30,50 C30,30 50,20 70,30 C90,40 90,60 70,70 C50,80 30,70 30,50 Z" fill="#0066CC"/>
+              <path d="M80,50 C80,30 100,20 120,30 C140,40 140,60 120,70 C100,80 80,70 80,50 Z" fill="#0066CC"/>
+              <text x="160" y="60" font-family="Rubik, sans-serif" font-size="20" font-weight="bold" fill="#0066CC">BE</text>
+            </svg>
+            <div class="footer-logo-text">BOILER ENGINEERING</div>
+          </div>
+          <p class="footer-text">1978年創業。蒸気設備専門の会社として、多くのお客様から信頼をいただいております。</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-title">サイトマップ</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="index.html#home">ホーム</a></li>
+            <li class="footer-link"><a href="index.html#about">会社概要</a></li>
+            <li class="footer-link"><a href="index.html#services">事業内容</a></li>
+            <li class="footer-link"><a href="index.html#patents">保有特許</a></li>
+            <li class="footer-link"><a href="index.html#projects">施工事例</a></li>
+            <li class="footer-link"><a href="index.html#careers">採用情報</a></li>
+            <li class="footer-link"><a href="index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-title">お問い合わせ</h3>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-map-marker-alt"></i>
+            <p>〒007-0849 札幌市東区北49条東14丁目9番7号</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-phone"></i>
+            <p>011-741-9011（代）</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-fax"></i>
+            <p>011-741-9034</p>
+          </div>
+          <div class="footer-contact-item">
+            <i class="footer-contact-icon fas fa-globe"></i>
+            <p>http://www.boiler-e.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2022 BOILER ENGINEERING CO.LTD. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
